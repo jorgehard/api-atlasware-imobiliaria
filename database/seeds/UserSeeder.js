@@ -10,11 +10,10 @@ class UserSeeder {
         password: "123",
         codigo: "1",
         email: "admin@admin.com",
-        type_user_id: 1,
-        roles: [1],
-        permissions: [1],
+        type_user_id: 1
       },
     ]);
+    await 
   }
 }
 
