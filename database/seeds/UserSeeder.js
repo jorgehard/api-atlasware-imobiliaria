@@ -12,7 +12,7 @@ class UserSeeder {
         email: "admin@admin.com",
         type_user_id: 1,
         roles: [1],
-        permissions: [1, 2],
+        permissions: [1],
       },
     ]);
   }

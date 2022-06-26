@@ -35,4 +35,5 @@ Route.resource("users", "UserController")
       [["users.update"], ["User"]],
     ])
   )
-  .middleware(["auth:jwt", "is:manager"]);
+  
+  //.middleware(["auth:jwt", "is:manager"]);
