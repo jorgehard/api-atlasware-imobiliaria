@@ -1,15 +1,11 @@
-version: "3"
+version: "3.1"
 
 services:
-  mysqlAtlasware:
-    image: mysql:5.7
-    container_name: mysqlAtlasware
-    ports:
-      - "3306:3306"
-    volumes:
-      - /var/lib/mysql
+  db:
+    image: postgres:14.2-alpine
+    restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: fenix-atlasware
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: admin
+    ports:
+      - '5432:5432'
